@@ -9,10 +9,10 @@ import Card from './Card'
 
 const Features = () => {
   return (
-    <section id='features'
-     className='w-full h-[1650px] py-20 border-b-[1px] border-b-black'>
+    <section id='services'
+     className='w-full h-auto py-20 border-b-[1px] border-b-black'>
       <Title title = "Services" des = "I offer these services for you" />
-      <div className='grid grid-cols-3 gap-20 '>
+      <div className='grid grid-cols-1 md:grid-cols-2 lgl:md:grid-cols-3 xl:grid-cols-3 lgl:gap-20 xl:gap-20 gap-6  '>
       <Card 
           title = "Web Development"
           des = "To build responsive and scalable websites and web applications tailored to your business needs.To transform your ideas into a dynamic web presence that aligns perfectly with your goals."

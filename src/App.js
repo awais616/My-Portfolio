@@ -8,8 +8,8 @@ import Footerbottom from "./components/footer/Footerbottom";
 
 function App() {
   return (
-    <div className="w-full h-auto bg-bodyColor text-gray-400 pl-2">
-      <div className=" max-w-screen-xl mx-auto px-16">
+    <div className="w-full h-auto bg-bodyColor text-gray-400 px-[50px]">
+      <div className=" max-w-screen-xl mx-auto ">
           <Navbar />
           <Banner />
           <Features />

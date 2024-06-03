@@ -8,47 +8,48 @@ const Banner = () => {
   const [text] = useTypewriter ({
     words : ["Front end Developer", "Professional Coder", "UI Designer"],
     loop : true,
-    typeSpeed : 20,
-    delaySpeed : 10,
+    typeSpeed : 30,
+    deleteSpeed : 10,
     delaySpeed : 2000,
   });
   return (
     <section id='home' 
-    className='w-full pt-10 pb-20 flex items-center border-b-[1px] border-b-black font-titleFont'>
-      <div className='w-1/2 flex flex-col gap-20'>
+    className='w-full pt-10 pb-20 flex flex-col gap-10 lgl:gap-0 lgl:flex-row items-center border-b-[1px] border-b-black
+    font-titleFont  '>
+      <div className='w-full lgl:w-1/2 lgl:px-[50px] flex flex-col gap-20  '>
         <div className='flex flex-col gap-5'>
           <h4 className='text-lg font-normal '>WELCOME TO MY PROFILE</h4>
           <h1 className='text-5xl font-bold text-white'>
           Hi, I'm
-          <span className='text-designColor Capitaliza'> Muhammad Awais</span>
+          <span className='text-designColor  Capitaliza'> Muhammad Awais</span>
           </h1>
           <h2 className='text-4xl font-bold text-white'>
           a <span>{text}</span> 
           <Cursor
             cursorBlinking = "false"
-            cursorStyle = ""
-            cursorColor = '#ff014'
+            cursorStyle = "|"
+            cursorColor = '#ff014f'
           />
           </h2>
-          <p className='text-base font-bodyFont leading-6 tracking-wide'>
+          <p className='text-base text-justify font-bodyFont leading-6 tracking-wide pt-10'>
           A highly experienced Mid Level Frontend Developer with 2 years of expertise in developing user-friendly, adaptive and 
           responsive websites with optimized cross-browser compatibility and runtime performance. Spearheaded projects to 
           strengthen the brand by creating engaging web layouts for destination websites.</p>
         </div>
-          <div className='flex justify-between'>
+          <div className='flex flex-col lgl:flex-row gap-6 xl:gap-0 justify-between'>
           <div>
             <h2 className='text-base uppercase font-titleFont mb-4'>
             Find me in
             </h2>
             <div className='flex gap-4'>
               <span className='bannerIcon'>
-                  <FaFacebookF />
+              <a href="https://www.facebook.com/shootergang.shootergang/" target="_blank"><FaFacebookF /></a>
               </span>
               <span className='bannerIcon'>
                   <FaTwitter/>
               </span>
               <span className='bannerIcon'>
-                  <FaLinkedinIn/>
+                  <a href="https://www.linkedin.com/in/m-awais-dev/" target="_blank"><FaLinkedinIn/></a>
               </span>
             </div>
           </div>
@@ -70,8 +71,8 @@ const Banner = () => {
           </div>
           </div>
       </div>
-      <div className='w-1/2 flex justify-center items-center'>
-          <img className='w-[500px] h-[680px] z-10' 
+      <div className='w-full lgl:w-1/2 flex justify-center items-center relative'>
+          <img className='w-[380px] h-[480px] lgl:w-[480px] lgl:h-[600px] z-10' 
           src={bannerimg} alt="bannerimg" />
       </div>
     </section>
