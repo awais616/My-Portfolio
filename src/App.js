@@ -8,7 +8,7 @@ import Footerbottom from "./components/footer/Footerbottom";
 
 function App() {
   return (
-    <div className="w-full h-auto bg-bodyColor text-gray-400 px-[50px]">
+    <div className="w-full h-auto bg-bodyColor text-gray-400 px-[20px]">
       <div className=" max-w-screen-xl mx-auto ">
           <Navbar />
           <Banner />
@@ -16,8 +16,6 @@ function App() {
           <Resume />
           <Contact />
           <Footerbottom />
-
-
       </div>
     </div>
   );

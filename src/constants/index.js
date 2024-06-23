@@ -1,3 +1,4 @@
+
 export const navLinksdata = [
     {
     _id : 1001,
@@ -20,9 +21,4 @@ export const navLinksdata = [
     title : "Contacts",
     link : "contacts"
     },
-    {
-        _id : 1005,
-        title : "Download Resume",
-        link : ""
-        },
 ]
